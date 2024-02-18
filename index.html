@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo || Bluelearn</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <span>To-Do List</span>
+        </div>
+    </div>
+
+    <div class="main">
+        <div class="input-section">
+            <label for="title">Title: </label>
+            <input type="text" id="title" name="title">
+            <label for="description">About: </label>
+            <textarea id="description" name="description"></textarea>
+            <div class="button">
+                <button class="btn add" onclick="addTask()">Add task</button>
+            </div>
+        </div>
+
+        <div class="task_rendering">
+            <div class="header">
+                <span>Tasks</span>
+            </div>
+            <div class="allTask" id="allTasks">
+                <!-- Tasks will be rendered here -->
+            </div>
+        </div>
+    </div>
+
+    
+    <script src="script.js"></script>
+</body>
+</html>
